@@ -1,0 +1,15 @@
+node_modules
+.pnpm-store
+.turbo
+.env
+.env.local
+.env.production
+.env.development
+coverage
+build
+coverage
+.DS_Store
+*.log
+dist
+.idea
+.vscode

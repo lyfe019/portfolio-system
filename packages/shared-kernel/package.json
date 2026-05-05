@@ -1,0 +1,10 @@
+{
+  "name": "@packages/shared-kernel",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "eventemitter3": "^5.0.4",
+    "neverthrow": "^8.2.0"
+  }
+}
