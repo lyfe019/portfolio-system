@@ -1,15 +1,96 @@
 {
   "compilerOptions": {
     "target": "ES2022",
+
+    "lib": ["ES2022"],
+
     "module": "ESNext",
-    "moduleResolution": "node",
+
+    "moduleResolution": "Bundler",
+
+    "ignoreDeprecations": "6.0",
+
     "strict": true,
-    "declaration": true,
-    "sourceMap": true,
+    "types": ["node"],
+
+
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+
+    "forceConsistentCasingInFileNames": true,
+
     "skipLibCheck": true,
+
     "resolveJsonModule": true,
-        "types": ["node"],
-    "ignoreDeprecations": "6.0"
-  }
+
+    "declaration": true,
+    "declarationMap": true,
+
+    "sourceMap": true,
+
+    "incremental": true,
+
+    "composite": true,
+
+    "baseUrl": ".",
+
+    "paths": {
+      "@shared-kernel/*": [
+        "packages/shared-kernel/src/*"
+      ],
+
+      "@portfolio-contracts/*": [
+        "packages/portfolio-contracts/src/*"
+      ],
+
+      "@schema-registry/*": [
+        "packages/schema-registry/src/*"
+      ],
+
+      "@event-contracts/*": [
+        "packages/event-contracts/src/*"
+      ],
+
+      "@observability-contracts/*": [
+        "packages/observability-contracts/src/*"
+      ],
+
+      "@visualization-contracts/*": [
+        "packages/visualization-contracts/src/*"
+      ],
+
+      "@visualization-engine/*": [
+        "packages/visualization-engine/src/*"
+      ],
+
+      "@contract-mappers/*": [
+        "packages/contract-mappers/src/*"
+      ],
+
+      "@portfolio-sdk/*": [
+        "packages/portfolio-sdk/src/*"
+      ],
+
+      "@engineering-toolkit/*": [
+        "packages/engineering-toolkit/src/*"
+      ]
+    }
+  },
+
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage"
+  ]
 }
